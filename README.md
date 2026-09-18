@@ -1,1 +1,97 @@
-# ultron-yashvardhan-ai
+# 🤖 YASHVARDHAN AI — Final JARVIS-Style Windows Assistant
+
+**YASHVARDHAN AI** is a real, voice-first, bilingual (Hindi + English + Hinglish) personal computer assistant built for Windows. It features a futuristic animated visual AI core, real Windows OS automation, female voice TTS, intent reasoning, and multi-turn tool calling.
+
+---
+
+## ⚡ Key Highlights & Core Capabilities
+
+- **🎙️ Voice-First Bilingual Interface**: Understands Hindi, English, and natural mixed Hinglish without prior language switching.
+- **✨ JARVIS Animated Core**: Dynamic central glowing multi-ring energy sphere with audio-reactive waveforms and live telemetry (CPU %, RAM %, Battery, OS, Uptime).
+- **🔊 Natural Female Voice**: Custom female voice synthesis with customizable speech rate, volume, and automatic tone modulation.
+- **⚡ Wake Words & Continuous Speech**:
+  - *"Get up bro"* -> Responds: *"Always ready, bro."*
+  - *"Hey Yashvardhan"*, *"Hello Yashvardhan"*, *"Yashvardhan AI"*, *"Hey Jarvis"*, *"Jarvis"*
+  - Stays active for continuous follow-up commands without repeating wake words.
+  - *"Stop"* / *"Cancel"* / *"Bas"* immediately aborts speech and actions safely.
+- **💻 Real Windows OS Automation**:
+  - **Applications**: Open / Close Chrome, VS Code, Notepad, Spotify, Calculator, File Explorer, Command Prompt, etc.
+  - **Browser & Media**: Search Google, open YouTube and play tutorials, open GitHub, ChatGPT, etc.
+  - **File Operations**: Create folders on Desktop/Documents, create & save code files (.py, .js, .txt), find files, read files.
+  - **System Telemetry**: Live CPU, RAM, Battery, OS, and Uptime reporting.
+  - **Safety Interceptor**: Destructive commands (shutdown, restart, deletion) require explicit voice / button confirmation.
+- **🧠 Intelligent Brain & Coding Assistant**:
+  - Answers complex questions, concept explanations, and step-by-step programming.
+  - Evaluates user statements politely (corrects errors with clear rationale, affirms correct facts).
+
+---
+
+## 🚀 Quick Start (1-Click)
+
+### 1. Setup Dependencies
+Double-click `setup.bat` or run in PowerShell:
+```powershell
+cmd /c "setup.bat"
+```
+
+### 2. Launch Assistant
+Double-click `start.bat` or run in PowerShell:
+```powershell
+cmd /c "start.bat"
+```
+The assistant will initialize on `http://localhost:5173` with backend automation on `http://localhost:5000`.
+
+---
+
+## 🛠️ Manual PowerShell Commands
+
+### Install Dependencies
+```powershell
+# In server directory
+cd "C:\Users\BALA JI\Desktop\yashvardhan-ai\server"
+cmd /c "npm install"
+
+# In client directory
+cd "C:\Users\BALA JI\Desktop\yashvardhan-ai\client"
+cmd /c "npm install"
+```
+
+### Start Backend Server
+```powershell
+cd "C:\Users\BALA JI\Desktop\yashvardhan-ai\server"
+node src/index.js
+```
+
+### Start Frontend Dev Server
+```powershell
+cd "C:\Users\BALA JI\Desktop\yashvardhan-ai\client"
+cmd /c "npm run dev"
+```
+
+---
+
+## 🗣️ Voice Commands Examples
+
+| Voice Command | Action Executed | Spoken Response |
+| :--- | :--- | :--- |
+| *"Get up bro"* | Wakes up assistant core | *"Always ready, bro."* |
+| *"Chrome kholo"* | Launches Google Chrome | *"Bilkul Yashvardhan, main Chrome khol rahi hoon."* |
+| *"YouTube par Python tutorial search karo"* | Searches YouTube | *"Searching YouTube for Python tutorial."* |
+| *"Desktop par AI Assistant folder bana do"* | Creates folder on Desktop | *"Bilkul, Desktop par AI Assistant folder bana diya hai."* |
+| *"Python files dhundo"* | Searches for `.py` files | *"Found X Python files."* |
+| *"System status batao"* | Reads CPU & RAM telemetry | *"CPU usage is X%, RAM usage is Y%."* |
+| *"Python mein list kya hoti hai?"* | Explains programming concept | Intelligent conceptual explanation with code block |
+| *"2 + 2 = 5, kya ye sahi hai?"* | Fact checking & evaluation | *"Not quite. The correct answer is 4 because 2 plus 2 equals 4."* |
+| *"Computer shutdown kar do"* | Safety Interceptor triggered | *"Yashvardhan, computer shutdown hone wala hai. Continue karu?"* |
+| *"Stop"* / *"Bas"* | Emergency stop | Aborts speech and returns to standby |
+
+---
+
+## ⚙️ Configuration & API Keys
+
+Configure settings by clicking the **⚙️ Settings** icon in the top navigation bar:
+- **Language Mode**: AUTO / HINGLISH / HINDI / ENGLISH
+- **Female Voice**: Select system female voice (Microsoft Heera, Microsoft Swara, Microsoft Zira, etc.)
+- **Speech Speed & Volume**: Adjust voice sliders
+- **API Provider**: Google Gemini (Recommended) / OpenAI / Anthropic / Groq
+- **API Key**: Enter key in Settings modal (saved locally in server configuration).
